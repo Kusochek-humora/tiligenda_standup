@@ -1,0 +1,37 @@
+// _mixins.scss
+
+// 1️⃣ Flex миксин
+// Используется для быстрого центрирования или направления флекс-контейнера
+@mixin flex($justify: flex-start, $align: stretch, $direction: row) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+// 2️⃣ Transition миксин
+// Быстрая анимация любых свойств
+@mixin transition($props: all, $duration: 0.3s, $timing: ease-in-out) {
+    transition: $props $duration $timing;
+}
+
+// 3️⃣ Margin миксин
+// Поддержка 1-4 значений (как в CSS)
+@mixin m($values...) {
+    margin: $values;
+}
+
+// 4️⃣ Padding миксин
+// Поддержка 1-4 значений (как в CSS)
+@mixin p($values...) {
+    padding: $values;
+}
+
+@mixin transition-base {
+    transition: 0.3s all;
+}
+
+@mixin font_family($weight, $family: "Oswald") {
+    font-family: $family, sans-serif;
+    font-weight: $weight;
+}

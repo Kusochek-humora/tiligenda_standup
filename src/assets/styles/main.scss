@@ -1,0 +1,32 @@
+@use "fonts";
+@use "reset";
+@use "mixins" as *;
+@use "vars" as *;
+
+
+// глобальные стили
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.title {
+    @include font_family(700);
+    font-size: 60px;
+    line-height: 100%;
+    text-transform: uppercase;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    @include m(0 auto);
+    @include p(0 20px);
+}
