@@ -87,13 +87,15 @@ watch(locale, () => {
 
     &__img {
         height: 430px;
-        @media screen and (max-width:1024px){
+
+        @media screen and (max-width:1024px) {
             height: auto;
             max-width: 442px;
-            height: 430px;
+height: 430px;
             width: 100%;
             position: relative;
-            img{
+
+            img {
                 position: absolute;
                 top: 0;
                 left: 0;
@@ -103,6 +105,12 @@ watch(locale, () => {
                 object-position: center;
             }
         }
+
+        @media screen and (max-width:500px) {
+            max-width: 340px;
+            height: 330px;
+        }
+
     }
 
     &__sub {
