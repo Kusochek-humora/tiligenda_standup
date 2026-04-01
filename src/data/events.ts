@@ -3,7 +3,7 @@ import type { Event } from "@/types/event";
 export const events: Event[] = [
   {
     id: 1,
-    title: "Қазақша импровизациялық кеш",
+    title: "Қазақша импровизациялық кеше",
     // type_event: "Стендап",
     date: "2026-04-02",
     time: "21:30",
