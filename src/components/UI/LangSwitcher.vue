@@ -34,7 +34,9 @@ if (saved) {
     border-radius: 15px;
     padding: 10px;
     background-color: rgba(248, 248, 248, 1);
-
+    @media screen and (max-width: 500px){
+        padding: 5px;
+    }
     button {
    
         background: transparent;
@@ -47,7 +49,11 @@ if (saved) {
         @include font_family(400);
         width: 32px;
         height: 32px;
-
+        @media screen and (max-width: 500px) {
+            width: 24px;
+            height: 24px;
+            font-size: 10px;
+        }
         &.active {
             background: $red;
             color: white;

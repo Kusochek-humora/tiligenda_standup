@@ -5,14 +5,12 @@ import LangSwitcher from "./UI/LangSwitcher.vue";
 import BurgerBtn from "./UI/BurgerBtn.vue";
 
 import { useI18n } from "vue-i18n";
-
+// import SocialsList from "./UI/SocialsList.vue";
 
 const { t } = useI18n();
 
-
-
 defineProps<{ active: boolean }>();
-defineEmits<{ (e: 'toggle'): void }>();
+defineEmits<{ (e: "toggle"): void }>();
 </script>
 
 <template>
@@ -22,29 +20,43 @@ defineEmits<{ (e: 'toggle'): void }>();
       <LangSwitcher class="header__lang"></LangSwitcher>
       <ul class="header__list">
         <li class="header__list-item">
-          <a class="header__list-link" href="#afisha">{{ t("header.link-1") }}</a>
+          <a
+            class="header__list-link"
+            href="#schedule"
+            >{{ t("header.link-1") }}</a
+          >
         </li>
 
         <li class="header__list-item">
-          <a class="header__list-link" href="#efiry">{{ t("header.link-2") }}</a>
+          <a
+            class="header__list-link"
+            href="#video"
+            >{{ t("header.link-2") }}</a
+          >
         </li>
+<!-- 
+        <li class="header__list-item">
+          <a
+            class="header__list-link"
+            href="#merch"
+            >{{ t("header.link-3") }}</a
+          >
+        </li> -->
 
         <li class="header__list-item">
-          <a class="header__list-link" href="#merch">{{ t("header.link-3") }}</a>
-        </li>
-
-        <li class="header__list-item">
-          <a class="header__list-link" href="#contacts">{{ t("header.link-4") }}</a>
+          <a
+            class="header__list-link"
+            href="#contacts"
+            >{{ t("header.link-4") }}</a
+          >
         </li>
       </ul>
       <!-- burger button -->
-      <BurgerBtn :active="active" @click="$emit('toggle')" />
-
-
+      <BurgerBtn
+        :active="active"
+        @click="$emit('toggle')"
+      />
     </nav>
-
-
-
   </header>
 </template>
 
@@ -56,20 +68,22 @@ defineEmits<{ (e: 'toggle'): void }>();
   top: 0;
   width: 100%;
   background-color: #fff;
-
+  @media screen and (max-width: 500px) {
+    padding: 15px 0;
+  }
   &__container {
     display: flex;
     align-items: center;
-
   }
 
-  &__logo {}
+  &__logo {
+  }
 
   &__lang {
     @include m(0 40px 0 auto);
 
-    @media screen and (max-width:768px) {
-      @include m(0 15px 0 auto)
+    @media screen and (max-width: 768px) {
+      @include m(0 15px 0 auto);
     }
   }
 
@@ -77,12 +91,13 @@ defineEmits<{ (e: 'toggle'): void }>();
     display: flex;
     gap: 40px;
 
-    @media screen and (max-width:768px) {
+    @media screen and (max-width: 768px) {
       display: none;
     }
   }
 
-  &__list-item {}
+  &__list-item {
+  }
 
   &__list-link {
     text-transform: uppercase;
@@ -95,7 +110,6 @@ defineEmits<{ (e: 'toggle'): void }>();
 
     &::after,
     &::before {
-
       content: "";
       position: absolute;
       bottom: -5px;
@@ -105,7 +119,6 @@ defineEmits<{ (e: 'toggle'): void }>();
       display: block;
       @include transition-base;
     }
-
 
     &::after {
       right: 50%;
@@ -122,15 +135,13 @@ defineEmits<{ (e: 'toggle'): void }>();
       &::before {
         width: 50%;
       }
-
-
     }
   }
 
   &__burger {
     display: none;
 
-    @media screen and (max-width:768px) {
+    @media screen and (max-width: 768px) {
       display: flex;
     }
   }
