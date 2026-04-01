@@ -3,7 +3,7 @@ import { ref } from "vue";
 import IconComponent from "./IconComponent.vue";
 
 const emit = defineEmits<{ (e: "update:mode", mode: "line" | "card"): void }>();
-const active = ref<"line" | "card">("line");
+const active = ref<"line" | "card">("card");
 
 const setMode = (mode: "line" | "card") => {
   active.value = mode;
