@@ -55,7 +55,8 @@ watch(locale, () => {
             <a
               href="#schedule"
               class="promo__link schedule"
-              >Концерты</a
+            >
+              {{ t("promo.title-btn") }}</a
             >
             <a
               href="#contacts"
