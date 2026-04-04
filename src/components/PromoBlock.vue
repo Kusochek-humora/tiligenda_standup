@@ -41,7 +41,7 @@ watch(locale, () => {
     <div class="promo__container container">
       <div class="promo__img">
         <img
-          src="../assets/images/tiko.webp"
+          src="../assets/images/ee.jpg"
           alt="Tiko"
         />
       </div>
@@ -121,7 +121,18 @@ watch(locale, () => {
 
   &__img {
     height: 430px;
-
+    position: relative;
+    max-width: 441px;
+    width: 100%;
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
     @media screen and (max-width: 1024px) {
       position: relative;
       height: auto;
