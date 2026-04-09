@@ -68,7 +68,7 @@ export const events: Event[] = [
     image: new URL("@/assets/images/qyzylorda.webp", import.meta.url).href,
     url: "https://onvibe.me/kk/event/970",
   },
-    {
+  {
     id: 7,
     title: "Арзан психологтар",
     // type_event: "Стендап",
@@ -79,7 +79,7 @@ export const events: Event[] = [
     image: new URL("@/assets/images/qaraganda.webp", import.meta.url).href,
     url: "https://onvibe.me/kk/event/971",
   },
-    {
+  {
     id: 8,
     title: "Арзан психологтар",
     // type_event: "Стендап",
@@ -90,15 +90,15 @@ export const events: Event[] = [
     image: new URL("@/assets/images/oskemen.webp", import.meta.url).href,
     url: "https://onvibe.me/event/972",
   },
-  //   {
-  //   id: 9,
-  //   title: "Арзан психологтар",
-  //   // type_event: "Стендап",
-  //   date: "2026-04-17",
-  //   time: "18:30",
-  //   city: [{ id: 1, title: "Атырау" }],
-  //   address: "ул. Кабанбай Батыра, 71",
-  //   image: new URL("@/assets/images/atyrau.webp", import.meta.url).href,
-  //   url: "https://onvibe.me/kk/event/967",
-  // },
+  {
+    id: 9,
+    title: "Арзан психологтар",
+    // type_event: "Стендап",
+    date: "2026-04-24",
+    time: "19:00",
+    city: [{ id: 1, title: "Шымкент" }],
+    address: "ул. Кабанбай Батыра, 71",
+    image: new URL("@/assets/images/shymkent.webp", import.meta.url).href,
+    url: "https://onvibe.me/event/1056",
+  },
 ];
