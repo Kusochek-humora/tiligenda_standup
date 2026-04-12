@@ -18,7 +18,7 @@ export const events: Event[] = [
     title: "Арзан психологтар",
     // type_event: "Стендап",
     date: "2026-04-17",
-    time: "18:30",
+    time: "19:30",
     city: [{ id: 1, title: "Атырау" }],
     address: "Проспект Елорда, 24",
     image: new URL("@/assets/images/atyrau.webp", import.meta.url).href,
