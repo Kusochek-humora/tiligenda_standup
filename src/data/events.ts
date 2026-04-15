@@ -2,21 +2,8 @@ import type { Event } from "@/types/event";
 
 export const events: Event[] = [
   {
-    id: 1,
-    title: "Қазақша импровизациялық кеш",
-    // type_event: "Стендап",
-    date: "2026-04-21",
-    time: "21:30",
-    city: [{ id: 1, title: "Алматы" }],
-    address: "ул. Кабанбай Батыра, 71",
-    image: new URL("@/assets/images/asd1.png", import.meta.url).href,
-    url: "https://onvibe.me/event/963",
-  },
-
-  {
     id: 2,
     title: "Арзан психологтар",
-    // type_event: "Стендап",
     date: "2026-04-17",
     time: "19:30",
     city: [{ id: 1, title: "Атырау" }],
@@ -27,7 +14,6 @@ export const events: Event[] = [
   {
     id: 3,
     title: "Арзан психологтар",
-    // type_event: "Стендап",
     date: "2026-04-18",
     time: "19:00",
     city: [{ id: 1, title: "Ақтау" }],
@@ -38,7 +24,6 @@ export const events: Event[] = [
   {
     id: 4,
     title: "Арзан психологтар",
-    // type_event: "Стендап",
     date: "2026-04-19",
     time: "19:00",
     city: [{ id: 1, title: "Ақтөбе" }],
@@ -47,9 +32,28 @@ export const events: Event[] = [
     url: "https://onvibe.me/kk/event/969",
   },
   {
+    id: 1,
+    title: "Қазақша импровизациялық кеш",
+    date: "2026-04-21",
+    time: "21:30",
+    city: [{ id: 1, title: "Алматы" }],
+    address: "ул. Кабанбай Батыра, 71",
+    image: new URL("@/assets/images/asd1.png", import.meta.url).href,
+    url: "https://onvibe.me/event/963",
+  },
+  {
+    id: 9,
+    title: "Арзан психологтар",
+    date: "2026-04-23",
+    time: "19:00",
+    city: [{ id: 1, title: "Шымкент" }],
+    address: "ул. Кабанбай Батыра, 71",
+    image: new URL("@/assets/images/shymkent.webp", import.meta.url).href,
+    url: "https://onvibe.me/event/1056",
+  },
+  {
     id: 5,
     title: "Арзан психологтар",
-    // type_event: "Стендап",
     date: "2026-04-23",
     time: "19:00",
     city: [{ id: 1, title: "Тараз" }],
@@ -60,7 +64,6 @@ export const events: Event[] = [
   {
     id: 6,
     title: "Арзан психологтар",
-    // type_event: "Стендап",
     date: "2026-04-25",
     time: "19:00",
     city: [{ id: 1, title: "Қызылорда" }],
@@ -71,7 +74,6 @@ export const events: Event[] = [
   {
     id: 7,
     title: "Арзан психологтар",
-    // type_event: "Стендап",
     date: "2026-05-09",
     time: "19:00",
     city: [{ id: 1, title: "Қарағанды" }],
@@ -82,23 +84,11 @@ export const events: Event[] = [
   {
     id: 8,
     title: "Арзан психологтар",
-    // type_event: "Стендап",
     date: "2026-05-10",
     time: "18:30",
     city: [{ id: 1, title: "Өскемен" }],
     address: "ул. Кабанбай Батыра, 71",
     image: new URL("@/assets/images/oskemen.webp", import.meta.url).href,
     url: "https://onvibe.me/event/972",
-  },
-  {
-    id: 9,
-    title: "Арзан психологтар",
-    // type_event: "Стендап",
-    date: "2026-04-24",
-    time: "19:00",
-    city: [{ id: 1, title: "Шымкент" }],
-    address: "ул. Кабанбай Батыра, 71",
-    image: new URL("@/assets/images/shymkent.webp", import.meta.url).href,
-    url: "https://onvibe.me/event/1056",
   },
 ];
