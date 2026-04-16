@@ -41,16 +41,7 @@ export const events: Event[] = [
     image: new URL("@/assets/images/asd1.png", import.meta.url).href,
     url: "https://onvibe.me/event/963",
   },
-  {
-    id: 9,
-    title: "Арзан психологтар",
-    date: "2026-04-23",
-    time: "19:00",
-    city: [{ id: 1, title: "Шымкент" }],
-    address: "ул. Кабанбай Батыра, 71",
-    image: new URL("@/assets/images/shymkent.webp", import.meta.url).href,
-    url: "https://onvibe.me/event/1056",
-  },
+
   {
     id: 5,
     title: "Арзан психологтар",
@@ -60,6 +51,16 @@ export const events: Event[] = [
     address: "пр-кт Толе би, д.91А",
     image: new URL("@/assets/images/taraz.webp", import.meta.url).href,
     url: "https://onvibe.me/kk/event/973",
+  },
+    {
+    id: 9,
+    title: "Арзан психологтар",
+    date: "2026-04-24",
+    time: "19:00",
+    city: [{ id: 1, title: "Шымкент" }],
+    address: "ул. Кабанбай Батыра, 71",
+    image: new URL("@/assets/images/shymkent.webp", import.meta.url).href,
+    url: "https://onvibe.me/event/1056",
   },
   {
     id: 6,
